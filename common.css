@@ -65,3 +65,100 @@ input,select{
 	color: #fff;
 	border-radius: 6px;
 }
+.protection-tab-warp {
+	width: 100%;
+    height: 40px;
+    padding: 0 65px;
+    background: #fff;
+    line-height: 40px;
+    border-bottom: 1px solid #ebebeb;
+}
+.protection-tab-warp .protection-tab{
+	display: inline-block;
+	width: 60px;
+	margin-right: 50px;
+	text-align: center;
+	font-size: 17px;
+	color: #333;
+}
+.protection-tab-warp .protection-tab.action{
+	border-bottom: 2px solid #05aa72;
+}
+.protection-warp {
+	display: none;
+}
+.protection > div.action{
+	display: block;
+}
+.list-na {
+	margin: 118px auto;
+    width: 160px;
+    text-align: center;
+}
+.list-na img{
+	width: 100%;
+}
+.list-na .na-title {
+	margin: 20px 0 15px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #333;
+}
+.list-na p {
+	font-size: 15px;
+	line-height: 1.667;
+}
+
+
+.protection-list li{
+	padding: 15px 15px 0;
+	background: #fff;
+}
+.protection-list li h3 {
+	margin-bottom: 10px;
+	font-size: 18px;
+	color: #333;
+}
+.protection-list li > p > span {
+	font-size: 14px;
+	color: #333;
+	line-height: 1.385;
+}
+.protection-list .price{
+	color: #ff1b1b;
+}
+.protection-list .status {
+	width: 100vw;
+	height: 30px;
+	margin-top: 10px;
+	margin-left: -15px;
+	padding: 0 15px;
+	line-height: 30px;
+	border-top: 1px solid #ebebeb;
+	border-bottom: 1px solid #ebebeb;
+	color: #05aa72;
+}
+.protection-list .orders-btn {
+	height: 45px;
+	padding: 8px 0;
+	box-sizing: border-box;
+	text-align: right;
+}
+.protection-list .orders-btn span {
+	display: inline-block;
+	width: 75px;
+	height: 26px;
+	font-size: 14px;
+	border-radius: 25px;
+	border: 1px solid #9c9c9c;
+	text-align: center;
+    line-height: 26px;
+}
+.protection-list .orders-btn .detail,
+.protection-list .orders-btn .initiate{
+	color: #05aa72;
+	border-color: #05aa72;
+}
+
+
+
