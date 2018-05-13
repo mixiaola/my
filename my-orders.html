@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>我的订单</title>
+    <link rel="stylesheet" href="common.css">
+</head>
+
+<body class="protection">
+    <div class="protection-tab-warp">
+        <span class="protection-tab action">全部</span>
+        <span class="protection-tab">待支付</span>
+        <span class="protection-tab">已成功</span>
+    </div>
+    <div class="protection-all protection-warp action">
+        <ul class="protection-list">
+            <li>
+                <h3>协医健康无忧计划</h3>
+                <p><span>订单金额：</span><span class="price">¥19.90</span></p>
+                <p><span>受保障人：</span><span class="name">赵铁柱</span></p>
+                <p><span>下单时间：</span><span class="time">2018-05-12  12:12:01</span></p>
+                <div class="status">待支付</div>
+                <div class="orders-btn">
+                    <span class="cancel">取消订单</span>
+                    <span class="detail">订单详情</span>
+                    <span class="initiate">付款</span>
+                </div>
+            </li>
+            <li>
+                <h3>协医健康无忧计划</h3>
+                <p><span>订单金额：</span><span class="price">¥19.90</span></p>
+                <p><span>受保障人：</span><span class="name">赵铁柱</span></p>
+                <p><span>下单时间：</span><span class="time">2018-05-12  12:12:01</span></p>
+                <div class="status">等待期：90天</div>
+                <div class="orders-btn">
+                    <span class="cancel">取消订单</span>
+                    <span class="detail">订单详情</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="protection-already protection-warp">
+        <ul class="protection-list">
+            <li>
+                <h3>协医健康无忧计划</h3>
+                <p><span>订单金额：</span><span class="price">¥19.90</span></p>
+                <p><span>受保障人：</span><span class="name">赵铁柱</span></p>
+                <p><span>下单时间：</span><span class="time">2018-05-12  12:12:01</span></p>
+                <div class="status">待支付</div>
+                <div class="orders-btn">
+                    <span class="cancel">取消订单</span>
+                    <span class="detail">订单详情</span>
+                    <span class="initiate">付款</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="protection-waiting protection-warp">
+        <ul class="protection-list">
+            <li>
+                <h3>协医健康无忧计划</h3>
+                <p><span>订单金额：</span><span class="price">¥19.90</span></p>
+                <p><span>受保障人：</span><span class="name">赵铁柱</span></p>
+                <p><span>下单时间：</span><span class="time">2018-05-12  12:12:01</span></p>
+                <div class="status">等待期：90天</div>
+                <div class="orders-btn">
+                    <span class="cancel">取消订单</span>
+                    <span class="detail">订单详情</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$('.protection-tab-warp').on('click', 'span', function(e) {
+    var index = $(this).index();
+    $(this).addClass('action').siblings().removeClass('action');
+    $('.protection-warp').removeClass('action').eq(index).addClass('action');
+})
+</script>
+
+</html>
